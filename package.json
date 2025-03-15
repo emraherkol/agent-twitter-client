@@ -26,8 +26,10 @@
     "format": "prettier --write src/**/*.ts",
     "test": "jest"
   },
+  "peerDependencies": {
+    "@roamhq/wrtc": "^0.8.0"
+  },
   "dependencies": {
-    "@roamhq/wrtc": "^0.8.0",
     "@sinclair/typebox": "^0.32.20",
     "headers-polyfill": "^3.1.2",
     "json-stable-stringify": "^1.0.2",
