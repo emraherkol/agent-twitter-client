@@ -52,12 +52,12 @@ export class SttTtsPlugin implements Plugin {
   // Credentials & config
   private openAiApiKey?: string;
   private elevenLabsApiKey?: string;
-  private sttLanguage: string = 'en';
-  private gptModel: string = 'gpt-3.5-turbo';
-  private voiceId: string = '21m00Tcm4TlvDq8ikWAM';
-  private elevenLabsModel: string = 'eleven_monolingual_v1';
-  private systemPrompt: string = 'You are a helpful AI assistant.';
-  private silenceThreshold: number = 50;
+  private sttLanguage = 'en';
+  private gptModel = 'gpt-3.5-turbo';
+  private voiceId = '21m00Tcm4TlvDq8ikWAM';
+  private elevenLabsModel = 'eleven_monolingual_v1';
+  private systemPrompt = 'You are a helpful AI assistant.';
+  private silenceThreshold = 50;
 
   /**
    * chatContext accumulates the conversation for GPT:
@@ -85,7 +85,7 @@ export class SttTtsPlugin implements Plugin {
    * TTS queue for sequential playback
    */
   private ttsQueue: string[] = [];
-  private isSpeaking: boolean = false;
+  private isSpeaking = false;
 
   /**
    * Called immediately after `.use(plugin)`.

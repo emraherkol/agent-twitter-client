@@ -21,7 +21,7 @@ interface RecordToDiskPluginConfig {
  *  - cleanup(...) => close file stream
  */
 export class RecordToDiskPlugin implements Plugin {
-  private filePath: string = '/tmp/speaker_audio.raw';
+  private filePath = '/tmp/speaker_audio.raw';
   private outStream?: fs.WriteStream;
   private logger?: Logger;
 

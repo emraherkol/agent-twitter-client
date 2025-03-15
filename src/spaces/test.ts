@@ -70,6 +70,7 @@ async function main() {
     title: 'AI Chat - Dynamic GPT Config',
     description: 'Space that demonstrates dynamic GPT personalities.',
     languages: ['en'],
+    record: true,
   };
 
   const broadcastInfo = await space.initialize(config);
